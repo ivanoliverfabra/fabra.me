@@ -8,7 +8,7 @@ export const projects: Project[] = [
     tags: ['Next.JS', 'TailwindCSS', 'ShadCN'],
     imageUrl: 'https://9eux26ztgc.ufs.sh/f/tyWau0endVfojedjPvJiLWsnuxqtC6Xj81HpUcaZQVO4KEGN',
     demoUrl: 'https://fabra.me',
-    githubUrl: 'https://github.com/ivanoliverfabra/portfolio',
+    githubUrl: 'https://github.com/ivanoliverfabra/fabra.me',
     featured: true,
   },
   {
