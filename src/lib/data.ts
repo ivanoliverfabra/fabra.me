@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: 'Personal Portfolio',
     description: 'A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with Next.js and styled using Tailwind CSS and ShadCN components.',
     tags: ['Next.JS', 'TailwindCSS', 'ShadCN'],
-    imageUrl: 'https://9eux26ztgc.ufs.sh/f/tyWau0endVfojedjPvJiLWsnuxqtC6Xj81HpUcaZQVO4KEGN',
+    imageUrl: 'https://9eux26ztgc.ufs.sh/f/tyWau0endVfosWthOGBvGlORW1De2A0Mm9ChXP3aLubIdV7Z',
     demoUrl: 'https://fabra.me',
     githubUrl: 'https://github.com/ivanoliverfabra/fabra.me',
     featured: true,

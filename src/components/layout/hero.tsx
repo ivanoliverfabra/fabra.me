@@ -1,9 +1,8 @@
 "use client";
 
-import { ArrowDown, FileDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { FileDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { motion } from "motion/react";
 import { personalInfo, socialLinks } from "~/lib/data";
-import { cn } from "~/lib/utils";
 
 export function Hero() {
   return (
@@ -89,20 +88,6 @@ export function Hero() {
           </motion.div>
         </div>
       </div>
-
-      <motion.a
-        href="#about"
-        className={cn(
-          "absolute bottom-8 left-1/2 -translate-x-1/2",
-          "w-10 h-10 rounded-full flex items-center justify-center",
-          "bg-secondary hover:bg-secondary/80 transition-colors"
-        )}
-        aria-label="Scroll to About section"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-      >
-        <ArrowDown className="h-5 w-5 text-foreground" />
-      </motion.a>
     </section>
   );
 }
