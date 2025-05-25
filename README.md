@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# fabra.me
 
-## Getting Started
+A modern, personal portfolio and resume site built with Next.js 15, React 19, Tailwind CSS 4, and Framer Motion for smooth, interactive animations.
+This project is designed for developers and creatives who want a beautiful, performant, and easily extensible personal site.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Animated Hero, About, Projects, Experience, and Contact sections
+- Dark/light mode with system preference support
+- Responsive design for all devices
+- Framer Motion for smooth, interactive UI animations
+- Radix UI and Lucide Icons for accessible, modern UI elements
+- TypeScript for type safety
+- Easy content management via `src/lib/data.ts`
+- Serverless-ready (Next.js App Router)
+
+## Project Structure
+
+```
+/
+├── public/ # Static assets
+├── src/
+│   ├── app/ # Next.js App Router (pages, layouts)
+│   ├── components/ # Reusable UI components
+│   │   ├── layout/ # Layout specific components (header, footer, sections)
+│   │   └── ui/ # Generic UI elements (buttons, cards)
+│   ├── lib/ # Utilities, data, hooks
+│   │   └── data.ts # Main content configuration
+│   └── styles/ # Global styles, Tailwind config
+├── next.config.mjs # Next.js configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 15** (App Router, SSR/SSG)
+- **React 19**
+- **Tailwind CSS 4**
+- **Framer Motion** (for all animations)
+- **Shadcn UI**
+- **Lucide React** (icons)
+- **next-themes** (dark/light mode)
+- **TypeScript**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Theming
 
-## Learn More
+- Uses `next-themes` for dark/light mode.
+- Theme is toggled via the `ThemeToggle` component in the header.
+- Respects system preference by default.
 
-To learn more about Next.js, take a look at the following resources:
+## Animations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- All main sections and cards use Framer Motion for smooth entrance, exit, and interactive animations.
+- Animations are defined in each layout component (e.g., `hero.tsx`, `about.tsx`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+You can deploy this project to any platform that supports Next.js (Vercel, Netlify, AWS Amplify, etc.).
+Refer to the Next.js deployment documentation for more details: [https://nextjs.org/docs/deployment](https://nextjs.org/docs/deployment)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE)
